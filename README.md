@@ -4,7 +4,7 @@ Configuration in `./src/authConfig.js`.
 
 ## Application Screenshot
 
-![MockMe App](https://dev.azure.com/sollys/5bde5219-0169-424b-b425-3feafd3621c5/_apis/wit/attachments/9059989f-2a35-4091-b5b3-b8c5cfabdb99?fileName=image.png)
+<img width="1517" height="714" alt="image" src="https://github.com/user-attachments/assets/bfcad4e7-8412-4b17-bba0-ee5cd3ab9b92" />
 
 ## Notable files and what they demonstrate
 
