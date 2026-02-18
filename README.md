@@ -2,6 +2,10 @@
 
 Configuration in `./src/authConfig.js`.
 
+## Application Screenshot
+
+![MockMe App](https://dev.azure.com/sollys/5bde5219-0169-424b-b425-3feafd3621c5/_apis/wit/attachments/9059989f-2a35-4091-b5b3-b8c5cfabdb99?fileName=image.png)
+
 ## Notable files and what they demonstrate
 
 1. `./src/App.tsx` - Shows implementation of `MsalProvider`, all children will have access to `@azure/msal-react` context, hooks and components.

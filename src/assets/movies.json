@@ -1,0 +1,82 @@
+[
+  {
+    "movieId": "QTCS2DMWB",
+    "title": "Solo: A Star Wars Story (2018)",
+    "year": "2012",
+    "poster": "https://picsum.photos/id/103/640/480",
+    "price": 783.54,
+    "isActive": true
+  },
+  {
+    "movieId": "5Q9AOGKJV",
+    "title": "Star Wars: Episode I - The Phantom Menace (1999)",
+    "year": "2012",
+    "poster": "https://picsum.photos/id/32/640/480",
+    "price": 510.67,
+    "isActive": true
+  },
+  {
+    "movieId": "EEIBJVZYA",
+    "title": "Star Wars: Episode II - Attack of the Clones (2002)",
+    "year": "2011",
+    "poster": "https://picsum.photos/id/250/640/480",
+    "price": 989.21,
+    "isActive": true
+  },
+  {
+    "movieId": "NBLOVUXN6",
+    "title": "Star Wars: Episode III - Revenge of the Sith (2005)",
+    "year": "2022",
+    "poster": "https://picsum.photos/id/82/640/480",
+    "price": 471.31,
+    "isActive": true
+  },
+  {
+    "movieId": "CW0076759",
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": "1977",
+    "poster": "https://picsum.photos/id/56/640/480",
+    "price": 278.0,
+    "isActive": true
+  },
+  {
+    "movieId": "VSDWHPO4F",
+    "title": "Star Wars: Episode IX - The Rise of Skywalker (2019)",
+    "year": "2024",
+    "poster": "https://picsum.photos/id/201/640/480",
+    "price": 793.96,
+    "isActive": true
+  },
+  {
+    "movieId": "2INZPYK7H",
+    "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+    "year": "2008",
+    "poster": "https://picsum.photos/id/14/640/480",
+    "price": 739.94,
+    "isActive": true
+  },
+  {
+    "movieId": "4GLJ4H6HE",
+    "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+    "year": "2006",
+    "poster": "https://picsum.photos/id/20/640/480",
+    "price": 403.27,
+    "isActive": true
+  },
+  {
+    "movieId": "RRLQEIN8L",
+    "title": "Star Wars: Episode VII - The Force Awakens (2015)",
+    "year": "2022",
+    "poster": "https://picsum.photos/id/110/640/480",
+    "price": 696.17,
+    "isActive": true
+  },
+  {
+    "movieId": "VMUBXKQ9X",
+    "title": "Star Wars: Episode VIII - The Last Jedi (2017)",
+    "year": "2025",
+    "poster": "https://picsum.photos/id/133/640/480",
+    "price": 745.38,
+    "isActive": true
+  }
+]

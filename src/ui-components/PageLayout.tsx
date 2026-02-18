@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import SidebarNavBar from "./SidebarNavBar";
 
 type Props = {
@@ -25,9 +25,6 @@ export const PageLayout: React.FC<Props> = ({children}) => {
                         overflowY: "auto",
                     }}
                 >
-                    <Typography variant="h6" align="center" sx={{ mb: 4 }}>
-                        Welcome to MockMe App
-                    </Typography>
                     {children}
                 </Box>
             </Box>

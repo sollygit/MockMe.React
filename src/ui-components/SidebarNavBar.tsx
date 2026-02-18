@@ -11,11 +11,13 @@ import {
     ListItemIcon,
     ListItemText,
     IconButton,
+    Link,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
+import ApiIcon from "@mui/icons-material/Api";
 import WelcomeName from "./WelcomeName";
 import SignInSignOutButton from "./SignInSignOutButton";
 
@@ -44,7 +46,6 @@ const SidebarNavBar = () => {
                         component={RouterLink}
                         to="/"
                         sx={{
-                            flexGrow: 1,
                             color: 'white',
                             textDecoration: 'none',
                             cursor: 'pointer',
@@ -55,6 +56,33 @@ const SidebarNavBar = () => {
                     >
                         MockMe App
                     </Typography>
+                    <Box
+                        component="a"
+                        href={process.env.REACT_APP_REST_URI}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => {
+                            window.open(process.env.REACT_APP_REST_URI, '_blank');
+                        }}
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            ml: 3,
+                            color: 'white',
+                            cursor: 'pointer',
+                            textDecoration: 'none', // Removes underline
+                            '&:hover': {
+                                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                borderRadius: '4px',
+                            },
+                            p: 1,
+                        }}
+                        title="Swagger API"
+                    >
+                        <ApiIcon sx={{ color: 'white' }} />
+                    </Box>
+                    <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                         <WelcomeName />
                         <SignInSignOutButton />
