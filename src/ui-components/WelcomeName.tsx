@@ -16,7 +16,7 @@ const WelcomeName = () => {
     }, [account]);
 
     if (name) {
-        return <Typography variant="h6">Welcome, {name}</Typography>;
+        return <Typography variant="body2" sx={{ mr: 2, color: 'white' }}>Welcome, {name}</Typography>;
     } else {
         return null;
     }

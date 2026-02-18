@@ -36,7 +36,12 @@ const NameListItem: React.FC<{name: string}> = ({name}) => (
                 <PersonIcon />
             </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Name" secondary={name}/>
+        <ListItemText 
+            primary="Name" 
+            secondary={name}
+            primaryTypographyProps={{ variant: "subtitle2" }}
+            secondaryTypographyProps={{ variant: "body2" }}
+        />
     </ListItem>
 );
 
@@ -47,7 +52,12 @@ const JobTitleListItem: React.FC<{jobTitle: string}> = ({jobTitle}) => (
                 <WorkIcon />
             </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Title" secondary={jobTitle}/>
+        <ListItemText 
+            primary="Title" 
+            secondary={jobTitle}
+            primaryTypographyProps={{ variant: "subtitle2" }}
+            secondaryTypographyProps={{ variant: "body2" }}
+        />
     </ListItem>
 );
 
@@ -58,7 +68,12 @@ const MailListItem: React.FC<{mail: string}> = ({mail}) => (
                 <MailIcon />
             </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Mail" secondary={mail}/>
+        <ListItemText 
+            primary="Mail" 
+            secondary={mail}
+            primaryTypographyProps={{ variant: "subtitle2" }}
+            secondaryTypographyProps={{ variant: "body2" }}
+        />
     </ListItem>
 );
 
@@ -69,7 +84,12 @@ const PhoneListItem: React.FC<{phone: string}> = ({phone}) => (
                 <PhoneIcon />
             </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Phone" secondary={phone}/>
+        <ListItemText 
+            primary="Phone" 
+            secondary={phone}
+            primaryTypographyProps={{ variant: "subtitle2" }}
+            secondaryTypographyProps={{ variant: "body2" }}
+        />
     </ListItem>
 );
 
@@ -80,6 +100,11 @@ const LocationListItem: React.FC<{location: string}> = ({location}) => (
                 <LocationOnIcon />
             </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Location" secondary={location}/>
+        <ListItemText 
+            primary="Location" 
+            secondary={location}
+            primaryTypographyProps={{ variant: "subtitle2" }}
+            secondaryTypographyProps={{ variant: "body2" }}
+        />
     </ListItem>
 );

@@ -1,6 +1,5 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
-// Material-UI imports
-import Grid from "@mui/material/Grid";
+import { Container } from "@mui/material";
 
 // MSAL imports
 import { MsalProvider } from "@azure/msal-react";
@@ -25,9 +24,9 @@ function App({ pca }: AppProps) {
     return (
         <MsalProvider instance={pca}>
             <PageLayout>
-                <Grid container justifyContent="center">
+                <Container maxWidth="md" sx={{ p: 2 }}>
                     <Pages />
-                </Grid>
+                </Container>
             </PageLayout>
         </MsalProvider>
     );

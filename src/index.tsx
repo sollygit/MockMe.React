@@ -35,7 +35,10 @@ msalInstance.initialize().then(() => {
         document.getElementById("root") as HTMLElement
     );
     root.render(
-        <Router>
+        <Router future={{
+            v7_startTransition: true,
+            v7_relativeSplatPath: true
+        }}>
             <ThemeProvider theme={theme}>
                 <App pca={msalInstance} />
             </ThemeProvider>

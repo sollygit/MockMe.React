@@ -1,5 +1,5 @@
-import Typography from "@mui/material/Typography";
-import NavBar from "./NavBar";
+import { Box, Typography } from "@mui/material";
+import SidebarNavBar from "./SidebarNavBar";
 
 type Props = {
     children?: React.ReactNode;
@@ -8,11 +8,29 @@ type Props = {
 export const PageLayout: React.FC<Props> = ({children}) => {
     return (
         <>
-            <NavBar />
-            <Typography variant="h5" align="center">Welcome to MockMe App</Typography>
-            <br/>
-            <br/>
-            {children}
+            <SidebarNavBar />
+            <Box
+                sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "calc(100vh - 64px)",
+                    marginTop: '64px',
+                    overflow: "hidden",
+                }}
+            >
+                <Box
+                    sx={{
+                        flex: 1,
+                        p: 0,
+                        overflowY: "auto",
+                    }}
+                >
+                    <Typography variant="h6" align="center" sx={{ mb: 4 }}>
+                        Welcome to MockMe App
+                    </Typography>
+                    {children}
+                </Box>
+            </Box>
         </>
     );
 };

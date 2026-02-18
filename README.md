@@ -1,9 +1,6 @@
-# MSAL.js for React TypeScript Sample - Authorization Code Flow in Single-Page Applications
+# MSAL.js - Authorization Code Flow in Single-Page Applications
 
-## About this sample
-
-This developer sample is used to run basic use cases for the MSAL library. You can also alter the configuration in `./src/authConfig.js` to execute other behaviors.
-This sample was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Configuration in `./src/authConfig.js`.
 
 ## Notable files and what they demonstrate
 
@@ -31,29 +28,11 @@ This sample was bootstrapped with [Create React App](https://github.com/facebook
 - Replace client id with the Application (client) ID from the portal registration, or use the currently configured lab registration.
   - Optionally, you may replace any of the other parameters, or you can remove them and use the default values.
 
-#### Install npm dependencies for sample
-
-```bash
-# Install dev dependencies for msal-react and msal-browser from root of repo
-npm install
-
-# Change directory to sample directory
-cd samples/msal-react-samples/typescript-sample
-
-# Build packages locally
-npm run build:package
-```
-
 #### Running the sample development server
 
 1. In a command prompt, run `npm start`.
 1. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 1. Open [http://localhost:3000/profile](http://localhost:3000/profile) to see an example of a protected route. If you are not yet signed in, signin will be invoked automatically.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-- In the web page, click on the "Login" button and select either `Sign in using Popup` or `Sign in using Redirect` to begin the auth flow.
 
 #### Running the sample production server
 
@@ -61,11 +40,3 @@ You will also see any lint errors in the console.
 1. Next run `serve -s build`
 1. Open [http://localhost:5000](http://localhost:3000) to view it in the browser.
 1. Open [http://localhost:5000/profile](http://localhost:3000/profile) to see an example of a protected route. If you are not yet signed in, signin will be invoked automatically.
-
-#### Learn more about the 3rd-party libraries used to create this sample
-
-- [React documentation](https://reactjs.org/)
-- [TypeScript documentation](https://www.typescriptlang.org/docs/)
-- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
-- [React Router documentation](https://reactrouter.com/web/guides/quick-start)
-- [Material-UI documentation](https://material-ui.com/getting-started/installation/)
