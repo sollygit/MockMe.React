@@ -16,6 +16,9 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import HomeIcon from "@mui/icons-material/Home";
+import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
+import StarIcon from "@mui/icons-material/Star";
+import EditInputIcon from "@mui/icons-material/Edit";
 import PersonIcon from "@mui/icons-material/Person";
 import ApiIcon from "@mui/icons-material/Api";
 import WelcomeName from "./WelcomeName";
@@ -26,6 +29,9 @@ const SidebarNavBar = () => {
 
     const menuItems = [
         { label: "Home", icon: <HomeIcon />, path: "/" },
+        { label: "Trades", icon: <SwapHorizIcon />, path: "/trades" },
+        { label: "Starwars", icon: <StarIcon />, path: "/starwars" },
+        { label: "Application", icon: <EditInputIcon />, path: "/application" },
         { label: "Profile", icon: <PersonIcon />, path: "/profile" },
     ];
 

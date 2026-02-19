@@ -10,6 +10,7 @@ import { CustomNavigationClient } from "./utils/NavigationClient";
 import { PageLayout } from "./ui-components/PageLayout";
 import { Home } from "./pages/Home";
 import { Profile } from "./pages/Profile";
+import { Trades } from "./pages/Trades";
 
 type AppProps = {
     pca: IPublicClientApplication;
@@ -36,6 +37,7 @@ function Pages() {
     return (
         <Routes>
             <Route path="/profile" element={<Profile />} />
+            <Route path="/trades" element={<Trades />} />
             <Route path="/" element={<Home />} />
         </Routes>
     );
