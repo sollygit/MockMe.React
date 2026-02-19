@@ -222,7 +222,7 @@ const TradesGrid = () => {
                       Direction
                     </TableSortLabel>
                   </TableCell>
-                  <TableCell sx={{ fontWeight: 600 }}>Actions</TableCell>
+                  <TableCell sx={{ fontWeight: 600 }}></TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>

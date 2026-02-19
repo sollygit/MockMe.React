@@ -11,6 +11,8 @@ import { PageLayout } from "./ui-components/PageLayout";
 import { Home } from "./pages/Home";
 import { Profile } from "./pages/Profile";
 import { Trades } from "./pages/Trades";
+import { Starwars } from "./pages/Starwars";
+import { Application } from "./pages/Application";
 
 type AppProps = {
     pca: IPublicClientApplication;
@@ -38,6 +40,8 @@ function Pages() {
         <Routes>
             <Route path="/profile" element={<Profile />} />
             <Route path="/trades" element={<Trades />} />
+            <Route path="/starwars" element={<Starwars />} />
+            <Route path="/application" element={<Application />} /> 
             <Route path="/" element={<Home />} />
         </Routes>
     );
