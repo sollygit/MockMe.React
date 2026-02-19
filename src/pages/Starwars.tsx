@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { AuthenticatedTemplate, UnauthenticatedTemplate } from "@azure/msal-react";
+import { AuthenticatedTemplate, UnauthenticatedTemplate, useMsal } from "@azure/msal-react";
 import {
   Alert,
   Box,
@@ -23,7 +23,9 @@ import {
   Typography,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import LoginIcon from "@mui/icons-material/Login";
 import { Movie } from "../types/movie.type";
+import { loginRequest } from "../authConfig";
 
 const providers = ["CinemaWorld", "FilmWorld"] as const;
 type Provider = (typeof providers)[number];
@@ -313,6 +315,12 @@ const StarwarsContent = () => {
 };
 
 export function Starwars() {
+  const { instance } = useMsal();
+
+  const handleLogin = () => {
+    instance.loginRedirect(loginRequest);
+  };
+
   return (
     <>
       <AuthenticatedTemplate>
@@ -320,7 +328,29 @@ export function Starwars() {
       </AuthenticatedTemplate>
 
       <UnauthenticatedTemplate>
-        <Alert severity="info">Sign in to view Starwars movies.</Alert>
+        <Alert severity="info">
+          <Box component="span" sx={{ display: "inline-flex", alignItems: "center", gap: 0.75 }}>
+            <Link
+              component="button"
+              underline="none"
+              onClick={handleLogin}
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 0.5,
+                textDecoration: "none",
+                "& .MuiSvgIcon-root": {
+                  fontSize: "1.05em",
+                },
+                "&:hover": { textDecoration: "underline" },
+              }}
+            >
+              <LoginIcon />
+              Sign in
+            </Link>
+            <Box component="span">to view Starwars movies.</Box>
+          </Box>
+        </Alert>
       </UnauthenticatedTemplate>
     </>
   );
