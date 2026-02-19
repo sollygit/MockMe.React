@@ -27,6 +27,10 @@
         "test:e2e": "jest",
         "eject": "react-scripts eject"
     },
+    "engines": {
+        "node": ">=22.0.0",
+        "npm": ">=10"
+    },
     "browserslist": {
         "production": [
             ">0.2%",
