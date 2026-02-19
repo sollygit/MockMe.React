@@ -4,7 +4,7 @@ Configuration in `./src/authConfig.js`.
 
 ## Application Screenshot
 
-<img width="1517" height="714" alt="image" src="https://github.com/user-attachments/assets/bfcad4e7-8412-4b17-bba0-ee5cd3ab9b92" />
+<img width="1569" height="909" alt="image" src="https://github.com/user-attachments/assets/dbf7308c-e247-4a47-97b8-7847efc8d1f2" />
 
 ## Notable files and what they demonstrate
 
