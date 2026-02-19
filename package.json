@@ -1,5 +1,5 @@
 {
-    "name": "mockme-react",
+    "name": "mockme-app",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -22,6 +22,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
+        "serve": "npx serve -s build",
         "test": "react-scripts test",
         "test:e2e": "jest",
         "eject": "react-scripts eject"

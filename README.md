@@ -40,7 +40,5 @@ Configuration in `./src/authConfig.js`.
 
 #### Running the sample production server
 
-1. In a command prompt, run `npm run build`.
-1. Next run `serve -s build`
-1. Open [http://localhost:5000](http://localhost:3000) to view it in the browser.
-1. Open [http://localhost:5000/profile](http://localhost:3000/profile) to see an example of a protected route. If you are not yet signed in, signin will be invoked automatically.
+1. `npm run build` to create a production build (buil;d folder created).
+2. `npm run serve` to serve it at http://localhost:3000.
